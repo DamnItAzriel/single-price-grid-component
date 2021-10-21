@@ -84,6 +84,7 @@ button{
     /* border: 2px solid hsl(0, 0%, 95%); */
     border-radius: 5px;
     background-color: hsl(71, 73%, 54%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .div2 .why-us{
@@ -101,4 +102,63 @@ button{
 
 .div2 .why-us p{
     line-height: 1.6em;
+}
+button:hover{
+    /* color: hsl(71, 73%, 54%); */
+    background-color:#839a18;
+    /* background-color: #30cfcc; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+@media screen and (min-width:960px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 650px;
+        margin: 100px auto;
+        font-size: 16px;
+    }
+    .div2{
+        height: auto;
+        overflow: auto;
+        margin-top: 10px;
+    }
+    .join{
+        /* padding: 50px 40px ; */
+        padding-left: 40px;
+    }
+    .div2 .monthly-subscription, .div2 .why-us{
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+    .monthly-subscription, .why-us{
+        /* display: inline-block; */
+        width: 325px;
+        height: 275px;
+        margin-top: 0px;
+        float: left;
+        /* padding: 50px 40px 50px 40px; */
+    }
+    .why-us{
+        /* margin-left: -4px;
+        margin-top: 10px; */
+        padding-left: 40px;
+        line-height: 1.3em;
+    }
+    .monthly-subscription{
+        /* margin-top: 0px; */
+        padding-left: 40px;
+    }
+    button {
+        width: 215px;
+    }
+    .div2 .why-us{
+        border-radius: 0px 0px 5px 0px;
+    }
+    .div2 .monthly-subscription{
+        border-radius: 0px 0px 0px 5px;
+    }
 }
